@@ -1,0 +1,16 @@
+{
+  "id": "openclaw-native-plugin",
+  "name": "OpenClaw Native Plugin",
+  "description": "Native OpenClaw plugin scaffold converted from the earlier Codex-plugin workspace request.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "prefix": {
+        "type": "string",
+        "description": "Prefix added to the sample tool output."
+      }
+    }
+  }
+}
