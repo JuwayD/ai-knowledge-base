@@ -1,20 +1,40 @@
 # AI Knowledge Base
 
-This plugin is a native OpenClaw plugin scaffold.
+This repository is the OpenClaw-native packaging of the Codex plugin from:
 
-It was created under a dedicated subdirectory so it can be published as an independent GitHub repository without turning the parent directory into a repository.
+- `D:\WorkSpace\AIWorkSpace\codex-plugin\plugins\ai-knowledge-base`
 
-Files:
+It keeps the original Codex bundle structure for compatibility:
 
-- `openclaw.plugin.json`: native OpenClaw manifest
-- `package.json`: package metadata and OpenClaw runtime entry declaration
-- `index.ts`: runtime entry that registers a sample `starter_echo` tool
+- `.codex-plugin/plugin.json`
+- `skills/`
+- `scripts/`
+- `tools/`
 
-Local test:
+It also adds an OpenClaw-native entry so the package can be installed and exposed as a native OpenClaw plugin.
+
+## OpenClaw tools
+
+- `kb_run`: run the bundled `scripts/kb.py` CLI with arbitrary subcommand arguments
+- `kb_daily_check`: run the bundled `scripts/daily_check.py`
+
+## Plugin config
+
+- `kbHome`: override the knowledge-base data directory
+- `pythonExecutable`: override the Python interpreter used to run the scripts
+
+## Local test
 
 ```powershell
 npm install
 openclaw plugins install .
 openclaw plugins enable ai-knowledge-base
 openclaw gateway restart
+```
+
+Example tool behavior:
+
+```powershell
+python .\scripts\kb.py status
+python .\scripts\daily_check.py --json
 ```

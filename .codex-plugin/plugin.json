@@ -1,0 +1,35 @@
+{
+  "name": "ai-knowledge-base",
+  "version": "1.0.0",
+  "description": "面向 Codex 的个人知识库插件，内置知识学习、消化、复习、计划、备忘技能，以及打包好的 kb.py 命令行工具和供 Codex 自动化调用的每日巡检脚本。",
+  "author": {
+    "name": "Local Workspace"
+  },
+  "license": "MIT",
+  "keywords": [
+    "knowledge-base",
+    "learning",
+    "review",
+    "memo",
+    "teaching"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI 知识库",
+    "shortDescription": "知识学习、沉淀、复习、计划与备忘的一体化插件。",
+    "longDescription": "将 knowledge-plan、knowledge-teach、knowledge-digest、knowledge-review、knowledge-memo 打包为 Codex 本地插件，并内置 kb.py 命令行工具、Python 包装脚本和每日巡检脚本。推荐通过 Codex 自动化按日触发知识库巡检，由 AI 读取巡检结果后参与判断今天应先处理复习还是备忘。默认数据目录为用户目录下的 .ai-knowledge-base，也可通过 KB_HOME 覆盖。",
+    "developerName": "Local Workspace",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "教我一个概念并沉淀进知识库",
+      "检查今天有哪些待复习和待提醒事项",
+      "为一个主题创建或调整学习计划"
+    ],
+    "brandColor": "#2F6B5F"
+  }
+}

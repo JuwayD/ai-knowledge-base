@@ -1,15 +1,19 @@
 {
   "id": "ai-knowledge-base",
   "name": "AI Knowledge Base",
-  "description": "Native OpenClaw plugin scaffold converted into the ai-knowledge-base plugin workspace.",
-  "version": "0.1.0",
+  "description": "OpenClaw-native packaging of the AI knowledge-base Codex plugin, including bundled skills and Python CLI scripts.",
+  "version": "1.0.0",
   "configSchema": {
     "type": "object",
     "additionalProperties": false,
     "properties": {
-      "prefix": {
+      "kbHome": {
         "type": "string",
-        "description": "Prefix added to the sample tool output."
+        "description": "Overrides the default knowledge-base data directory."
+      },
+      "pythonExecutable": {
+        "type": "string",
+        "description": "Python interpreter used to execute the bundled scripts."
       }
     }
   }
