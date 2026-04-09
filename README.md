@@ -1,4 +1,4 @@
-# OpenClaw native plugin
+# AI Knowledge Base
 
 This plugin is a native OpenClaw plugin scaffold.
 
@@ -15,6 +15,6 @@ Local test:
 ```powershell
 npm install
 openclaw plugins install .
-openclaw plugins enable openclaw-native-plugin
+openclaw plugins enable ai-knowledge-base
 openclaw gateway restart
 ```

@@ -1,7 +1,7 @@
 {
-  "id": "openclaw-native-plugin",
-  "name": "OpenClaw Native Plugin",
-  "description": "Native OpenClaw plugin scaffold converted from the earlier Codex-plugin workspace request.",
+  "id": "ai-knowledge-base",
+  "name": "AI Knowledge Base",
+  "description": "Native OpenClaw plugin scaffold converted into the ai-knowledge-base plugin workspace.",
   "version": "0.1.0",
   "configSchema": {
     "type": "object",

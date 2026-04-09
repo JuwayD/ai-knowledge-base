@@ -2,8 +2,8 @@ import { Type } from "@sinclair/typebox";
 import { definePluginEntry } from "openclaw/plugin-sdk/plugin-entry";
 
 export default definePluginEntry({
-  id: "openclaw-native-plugin",
-  name: "OpenClaw Native Plugin",
+  id: "ai-knowledge-base",
+  name: "AI Knowledge Base",
   description: "A minimal native OpenClaw plugin with one sample tool.",
   register(api) {
     api.registerTool({
