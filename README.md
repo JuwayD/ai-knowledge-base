@@ -13,6 +13,8 @@ It keeps the original Codex bundle structure for compatibility:
 
 It also adds an OpenClaw-native entry so the package can be installed and exposed as a native OpenClaw plugin.
 
+The native manifest also exposes the bundled skill directory through `skills: ["./skills"]`, so OpenClaw can discover the packaged skills when installed as a native plugin.
+
 ## OpenClaw tools
 
 - `kb_run`: run the bundled `scripts/kb.py` CLI with arbitrary subcommand arguments

@@ -3,6 +3,7 @@
   "name": "AI Knowledge Base",
   "description": "OpenClaw-native packaging of the AI knowledge-base Codex plugin, including bundled skills and Python CLI scripts.",
   "version": "1.0.0",
+  "skills": ["./skills"],
   "configSchema": {
     "type": "object",
     "additionalProperties": false,
